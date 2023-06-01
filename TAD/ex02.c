@@ -56,7 +56,7 @@ int main(){
     {
         /*Texto do Compromisso*/
         strcpy(compromissos[i].compromisso_texto, "Compromisso de teste gerado aleatoriamente");
-        /*Função strcpy para é usada para copiar a string literal para o campo compromisso_texto de cada elemento do vetor compromissos */
+        /*Função strcpy  é usada para copiar a string literal para o campo compromisso_texto de cada elemento do vetor compromissos */
 
         /*data do compromisso*/
         compromissos[i].data_compromiso.dia = rand() % 20 + 1; // Gera um número aleatório entre 1 e 20
@@ -65,7 +65,7 @@ int main(){
 
         /*Hora do Compromisso*/
 
-        compromissos[i].horario_compeomisso.hora = rand() % 23; // Gera um número aleatório entre 1 e 20
+        compromissos[i].horario_compeomisso.hora = rand() % 23; // Gera um número aleatório entre 0 e 23 
         compromissos[i].horario_compeomisso.minutos = rand() % 59;
         compromissos[i].horario_compeomisso.segundos = rand() % 59;
 
